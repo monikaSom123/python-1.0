@@ -1,0 +1,98 @@
+list1 =[ "Ramesh", "Suresh", "Mahesh", "Ali", "Jacob" ]
+list2 = ["Ali", "Mukesh", "Mahesh", "Jacob", "Sai", "Sarita" ]
+c=[]
+for i in list1:
+  if i in list2:
+    c.append(i)
+    print(i)
+      
+    
+_____________________________________________________________________________________________________________________________________________________________________________        
+
+
+ 
+
+
+string ='ramesh suresh mohit'
+
+list_string = string.split(' ')
+print(list_string)
+
+name =input("enter the name :")
+age =input("enter the age  :") 
+print (name, age)
+
+
+_____________________________________________________________________________________________________________________________________________________________________________
+
+
+
+  
+
+
+  dict= { "paracitamol": 35,"azithromycin" : 33,"vitamin c":33}
+  
+  list = [(k,v)for k,v in dict.items()]
+  
+  
+
+  print(list1)
+  
+  total_rs= 2000
+  paracitamol =2*35
+  print("paracitamol rate :", paracitamol)
+  azithromycin = 33*3
+  print("azithromycin rate :", azithromycin)
+  vitaminc=3*33
+  print (  "vitaminc :", vitaminc )
+  sum=paracitamol+azithromycin+vitaminc
+  print(  "sum of total medicine : ", sum)
+  refundedamount = ( total_rs - sum)
+  print ("refundedamount :" , refundedamount )
+
+________________________________________________________________________________________________________________________________________________________________________
+
+
+age= int(input( 'enter your age'))
+if age >=18:
+  print( 'congrats! u are eligibe')
+else :
+  age =(18-age)
+  print( ' you are return after ', age ,' years' )
+
+_____________________________________________________________________________________________________________________________________________________________________________
+
+string ="monika som"
+count=0
+i=0
+for i in range(len(string)):
+  if(
+       
+   (string[i]=='a')
+   or(string[i]=='e')
+  or( string[i]=='i')
+ or ( string[i]=='o')
+  or (string[i]=='u')
+  ):
+    count =count+1  
+else :
+    pass
+
+    print("no of vowel in the given string is" ,count)
+
+_____________________________________________________________________________________________________________________________________________________________________________
+
+Name = ['Sam', 'Jacy', 'Tom', 'Steve']
+
+Python_nums =[ 25, 26, 29, 28]
+Stats_nums = [23, 21, 19, 25]
+sql_nums   =     [ 29, 27, 28, 25]
+
+
+python_mean = sum(Python_nums)/len(Python_nums)
+stats_mean = sum(Stats_nums)/len(Stats_nums)
+sql_mean = sum(sql_nums)/len(sql_nums)
+print( python_mean)
+print(stats_mean)
+print(sql_mean)
+print("max mean :",  python_mean,stats_mean,sql_mean)
